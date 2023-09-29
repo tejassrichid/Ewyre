@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeid"
+        android:icon="@drawable/icon_lock"
+        android:title="Home" />
+    <item
+        android:id="@+id/profileid"
+        android:icon="@drawable/icon_lock"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/searchid"
+        android:icon="@drawable/icon_lock"
+        android:title="Search" />
+    <item
+        android:id="@+id/moreid"
+        android:icon="@drawable/icon_lock"
+        android:title="More" />
+</menu>
