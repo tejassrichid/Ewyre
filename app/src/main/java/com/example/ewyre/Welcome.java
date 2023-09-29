@@ -1,3 +1,4 @@
+
 package com.example.ewyre;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,7 +19,7 @@ public class Welcome extends AppCompatActivity {
         getstart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Welcome.this, Login.class);
+                Intent intent = new Intent(Welcome.this, MainActivity.class);
                 startActivity(intent);
 
             }
