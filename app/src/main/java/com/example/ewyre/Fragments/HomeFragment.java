@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.ewyre.R;
 
+l
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link HomeFragment#newInstance} factory method to
