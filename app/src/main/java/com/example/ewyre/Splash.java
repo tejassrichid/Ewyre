@@ -20,10 +20,12 @@ public class Splash extends AppCompatActivity {
             @Override
             public void run() {
                 // Start the main activity or another appropriate activity
-                Intent intent = new Intent(Splash.this, Welcome.class);
+               Intent intent = new Intent(Splash.this, Choose.class);
                 startActivity(intent);
                 finish();
             }
         }, SPLASH_TIMEOUT);
     }
+
+
 }

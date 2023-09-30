@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="oval">
-    <solid android:color="#FF0000" /> <!-- Change the color as needed -->
+
+
+
+    <gradient
+        android:angle="45"
+        android:endColor="#A8295C"
+        android:centerColor="#11588A"
+        android:startColor="#000"
+        android:type="linear" />
+
+<!--    <solid android:color="#FF0000" /> &lt;!&ndash; Change the color as needed &ndash;&gt;-->
 </shape>
