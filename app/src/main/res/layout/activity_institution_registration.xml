@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="REGISTER"
+        android:textColor="#df7154"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/logo_sign_up" />
+
+    <LinearLayout
+        android:id="@+id/linearlayoutone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.007">
+
+        <EditText
+            android:id="@+id/editfirstname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textColorHint="#464646" />
+
+        <EditText
+            android:id="@+id/editmiddlename"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Middele Name"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textColorHint="#464646" />
+
+        <EditText
+            android:id="@+id/editlastname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textColorHint="#464646" />
+
+        <EditText
+            android:id="@+id/editphonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingStart="20dp"
+            android:textColorHint="#464646" />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/firstbutton"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/btn_register"
+            android:text="Next"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayouttwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.007">
+
+        <EditText
+            android:id="@+id/editemail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textColorHint="#464646" />
+
+        <EditText
+            android:id="@+id/editcity"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="City"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textColorHint="#464646" />
+
+        <EditText
+            android:id="@+id/editstate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="State"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textColorHint="#464646" />
+
+        <EditText
+            android:id="@+id/editcountry"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Country"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textColorHint="#464646" />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/secondbutton"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/btn_register"
+            android:text="Next"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayoutthree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.007">
+
+        <EditText
+            android:id="@+id/editaddress"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textColorHint="#464646" />
+
+        <EditText
+            android:id="@+id/editpincode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Pincode"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textColorHint="#464646" />
+
+        <EditText
+            android:id="@+id/editinstitutionname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Institution Name"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textColorHint="#464646" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uploadimage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/sidnav"
+            android:ems="10"
+            android:hint="Upload Profle Picture"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textAlignment="center"
+
+            android:textColorHint="#FFFFFF" />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registerbutton"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/btn_register"
+            android:text="Register"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
