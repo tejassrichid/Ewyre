@@ -13,6 +13,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
@@ -175,17 +176,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new HomeFragment()).commit();
                 break;
-            case R.id.nav_settings:
+            case R.id.nav_profile:
                 getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new ProfileFragment()).commit();
                 break;
-            case R.id.nav_share:
-                getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new MoreFragment()).commit();
-                break;
-            case R.id.nav_about:
+            case R.id.nav_search:
                 getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new OthersFragment()).commit();
+                break;
+            case R.id.nav_more:
+                getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new MoreFragment()).commit();
                 break;
             case R.id.nav_logout:
                 Toast.makeText(this, "Logout!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), Login.class);
+                startActivity(intent);
                 break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);

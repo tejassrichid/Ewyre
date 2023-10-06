@@ -9,4 +9,11 @@
     <color name="teal_700">#FF018786</color>
 
     <color name="lavender">#8692f7</color>
+
+
+    <color name="toolbar_background_color">#EEEEEE</color>
+
+    <color name="toolbar_title_color">#E64A19</color>
+
+    <color name="toolbar_subtitle_color">#EF6C00</color>
 </resources>

@@ -25,6 +25,38 @@
 <!--    <style name="LoginTheme" parent="Theme.AppCompat.NoActionBar">-->
 <!--        <item name="android:windowBackground">@drawable/loginimage</item>-->
 <!--    </style>-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize the background color of the toolbar -->
+        <item name="android:colorPrimary">@color/toolbar_background_color</item>
+
+        <!-- Customize the text appearance in the toolbar title and subtitle -->
+        <item name="android:toolbarStyle">@style/ToolbarStyle</item>
+    </style>
+
+
+    <style name="ToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <!-- Customize the text color and size for the title -->
+        <item name="android:titleTextAppearance">@style/ToolbarTitleText</item>
+        <!-- Customize the text color and size for the subtitle -->
+        <item name="android:subtitleTextAppearance">@style/ToolbarSubtitleText</item>
+    </style>
+
+    <style name="ToolbarTitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!-- Customize the text color and size for the title -->
+        <item name="android:textColor">@color/toolbar_title_color</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ToolbarSubtitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <!-- Customize the text color and size for the subtitle -->
+        <item name="android:textColor">@color/toolbar_subtitle_color</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+
+
     <style name="DialogAnimation">
         <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
         <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>

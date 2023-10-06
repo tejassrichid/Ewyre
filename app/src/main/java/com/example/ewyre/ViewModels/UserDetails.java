@@ -10,9 +10,37 @@ public class UserDetails {
     public String LastName;
     public String InstitutionName;
 
+    public String Password;
 
+    public String ConfirmPassword;
     public String Email;
-    public Number PhoneNumber;
+    public String UserName;
+
+    public String getUserName() {
+        return UserName;
+    }
+
+    public void setUserName(String userName) {
+        UserName = userName;
+    }
+
+    public String getPassword() {
+        return Password;
+    }
+
+    public void setPassword(String password) {
+        Password = password;
+    }
+
+    public String getConfirmPassword() {
+        return ConfirmPassword;
+    }
+
+    public void setConfirmPassword(String confirmPassword) {
+        ConfirmPassword = confirmPassword;
+    }
+
+    public String PhoneNumber;
     public Boolean IsActive;
     public int UserRole;
     public String Address;
@@ -30,7 +58,7 @@ public class UserDetails {
     public String CurrentCompany;
     public String CurrentCompanyPhoneNumber;
     public String Departments;
-    public int Experience;
+    public String Experience;
 
     public String DeviceId;
 
@@ -82,11 +110,11 @@ public class UserDetails {
         Email = email;
     }
 
-    public Number getPhoneNumber() {
+    public String getPhoneNumber() {
         return PhoneNumber;
     }
 
-    public void setPhoneNumber(Number phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         PhoneNumber = phoneNumber;
     }
 
@@ -220,11 +248,11 @@ public class UserDetails {
         Departments = departments;
     }
 
-    public int getExperience() {
+    public String getExperience() {
         return Experience;
     }
 
-    public void setExperience(int experience) {
+    public void setExperience(String experience) {
         Experience = experience;
     }
 

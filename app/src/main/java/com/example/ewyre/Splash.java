@@ -6,6 +6,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+import android.window.SplashScreen;
 
 public class Splash extends AppCompatActivity {
 
@@ -16,15 +21,24 @@ public class Splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN
+        );
+        ImageView splashTextImage = findViewById(R.id.splashimageview);
+        Animation slideAnimation = AnimationUtils.loadAnimation(this, R.anim.side_slide);
+        splashTextImage.startAnimation(slideAnimation);
+
+        // we used the postDelayed(Runnable, time) method
+        // to send a message with a delayed time.
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                // Start the main activity or another appropriate activity
-               Intent intent = new Intent(Splash.this, InstitutionRegistration.class);
+                Intent intent = new Intent(Splash.this, Login.class);
                 startActivity(intent);
                 finish();
             }
-        }, SPLASH_TIMEOUT);
+        }, 3000); // 3000 is the delayed time in milliseconds.
     }
 
 
